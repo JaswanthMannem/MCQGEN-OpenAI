@@ -9,7 +9,7 @@ from langchain.callbacks import get_openai_callback
 from src.mcqgenerator.MCQGenerator import generate_evalution_chain
 from src.mcqgenerator.loggers import logging
 
-with open(r"D:\mcqgen\response.json","r") as fp:
+with open("D:\mcqgen\response.json","r") as fp:
     response_json=json.load(fp)
 
 st.title("MCQs Creator Application Using Langchain")
